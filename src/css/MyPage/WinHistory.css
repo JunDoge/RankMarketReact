@@ -1,0 +1,69 @@
+.font16{
+    font-weight: bold;
+    font-size: 16px;
+}
+.winhis-pay-button{
+    color: black;
+    background-color: white;
+    border-color: black;
+}
+.winhis-pay-button:hover{
+    color: white;
+    background-color: #F27F22;
+    border-color: #F27F22;
+}
+.winhis-review-button{
+    color: black;
+    background-color: white;
+    border-color: black;
+}
+.winhis-review-button:hover{
+    color: white;
+    background-color: #F27F22;
+    border-color: #F27F22;
+}
+.winhis-report-button{
+    color: #E52525;
+    background-color: white;
+    border-color: #E52525;
+}
+.winhis-report-button:hover{
+    color: white;
+    background-color: red;
+    border-color: red;
+}
+.star-rating {
+    display: flex;
+}
+
+.star {
+    appearance: none;
+    padding: 1px;
+}
+
+.star::after {
+    content: '☆';
+    color: #F27F22;
+    font-size: 36px;
+}
+
+.star:hover::after,
+.star:has(~ .star:hover)::after,
+.star:checked::after,
+.star:has(~ .star:checked)::after {
+    content: '★';
+}
+
+.star:hover ~ .star::after {
+    content: '☆';
+}
+.winBtn{
+    margin: auto;
+}
+
+/* 이미지 크기를 160.63px * 160.63px로 고정 */
+.img-fixed-size {
+    width: 160.63px;
+    height: 160.63px;
+    object-fit: cover; /* 이미지 비율을 유지하면서 컨테이너에 맞춰 조절 */
+}

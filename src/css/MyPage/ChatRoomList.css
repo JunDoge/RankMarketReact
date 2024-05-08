@@ -1,0 +1,171 @@
+
+.chat-room-list {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.chat-nav-link {
+    background-color: inherit;
+    display: block;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid rgba(126,126, 126, 0.3);
+}
+.chat-nav-div {
+    border-right: 2px solid #F27F22;
+    margin-right: 1rem;
+    padding: 1%;
+
+}
+.chat-nav-div p{
+    font-size: 26px;
+    font-weight: bold;
+}
+.chat-nav-div {
+    width: 30%;
+    margin-right: 1rem;
+}
+
+.chat-room-route {
+    flex: 1;
+}
+.chat-action {
+    background: linear-gradient(to left, rgba(243, 196, 158, 0.21) 98%, #F27F22 2%) ;
+    border: none ;
+    color: black ;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+.chatTitle {
+    margin: 5%;
+    margin-top: 80px;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease-in-out;
+}
+
+.chat-nav-div {
+    border-right: 2px solid #F27F22;
+    margin-right: 1rem;
+    padding: 1%;
+    width: 15%;
+    margin-right: 1rem;
+    transform: translateX(0);
+    transition: transform 0.5s ease-in-out;
+    position: sticky;
+}
+@media (max-width: 1700px) {
+    .chat-nav-div{
+        width: 30%;
+    }
+
+}
+@media (max-width: 900px) {
+    .chat-nav-div{
+        width: 40%;
+    }
+
+}
+.chat-nav-div.slide-out {
+    transform: translateX(-124%);
+}
+
+.chatroom-toggle {
+    display: inline-block;
+    border: 2px solid #F27F22;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #F27F22;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    width: 5vh;
+    height: 5vh;
+    position: absolute;
+    left: 90%;
+    top: 50vh;
+
+    background-size: 20px 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 1700px) {
+    .chatroom-toggle{
+        left: 95%;
+    }
+}
+@media (max-width: 1500px) {
+    .chatroom-toggle{
+        left: 93%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .chatroom-toggle{
+        left: 90%;
+    }
+}
+
+@media (max-width: 900px) {
+    .chatroom-toggle{
+        left: 90%;
+    }
+}
+@media (max-width: 841px) {
+    .chatroom-toggle{
+        left: 88%;
+    }
+}
+@media (max-width: 700px) {
+    .chatroom-toggle{
+        left: 88%;
+    }
+}
+@media (max-width: 511px) {
+    .chatroom-toggle{
+        left: 70%;
+    }
+}
+
+.chatroom-toggle:hover {
+    background-color: #F27F22;
+    color: #fff;
+}
+.hide {
+    display: none;
+}
+.chatroom-toggle.right {
+    background-image: url('https://ifh.cc/g/Y9y6Jf.png');
+
+}
+
+.chatroom-toggle.left {
+    background-image: url('https://ifh.cc/g/Y9y6Jf.png');
+}
+.chatroom-toggle.right:hover {
+    background-image: url('https://ifh.cc/g/mlP9Cj.png');
+}
+
+.chatroom-toggle.left:hover {
+    background-image: url('https://ifh.cc/g/qRSoKx.png');
+}

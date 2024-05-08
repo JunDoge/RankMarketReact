@@ -1,0 +1,136 @@
+.productadd-header{
+    margin: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    background: #f7f9fb;
+    border: none;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border-radius: 15px;
+    padding: 20px;
+    position: relative;
+    
+}
+
+
+@media screen and (max-width: 1614px) {
+    .productadd-header {
+        margin-top: 5%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
+
+@media screen and (max-width: 1406px) {
+    .productadd-header {
+        margin-top: 6%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
+
+@media screen and (max-width: 1194px) {
+    .productadd-header {
+        margin-top: 6%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
+
+@media screen and (max-width: 1234px) {
+    .productadd-header {
+        margin-top: 6%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+}
+@media screen and (max-width: 946px) {
+    .productadd-header {
+        margin-top: 9%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+}
+@media screen and (max-width: 730px) {
+    .productadd-header {
+        margin-top: 10%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+}
+@media screen and (max-width: 622px) {
+    .productadd-header {
+        margin-top: 15%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+}
+@media screen and (max-width: 394px) {
+    .productadd-header {
+        margin-top: 20%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+}
+.productadd-header p {
+    margin-top: 10px;
+    font-size: 20px;
+    margin-left: 20px;
+    color : #f27f22;
+    text-shadow: none;
+}
+/*필수 입력 글색상*/
+
+.bottom-line {
+    border-color: #F27F22;
+    border-width: 2px;
+}
+
+.parent-element {
+    text-align: center;
+}
+
+.productadd-form{
+    width: 800px;
+    padding: 40px 30px;
+    background: #ffffff;
+    border: 2px solid #F27F22; 
+    border-radius: 20px;
+    box-shadow: -3px -3px 7px #bcabab73,
+               2px 2px 5px rgba(94,104,121,0.288);
+    margin: auto;
+}
+
+
+.custom-file-label::after {
+    content: "+";
+    background-color: #aaaaaa;
+}
+
+.productAddInput input[type="text"],.productAddInput input[type="number"], .significant input[type="text"], .productAddInput select, .productAddInput textarea {
+    border: 2px solid #F27F22;
+    border-radius: 15px;
+    width: 70%; /* 원래 100%였던 것을 80%로 줄임 */
+    padding: 8px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    margin-right: 20%; /* 왼쪽 마진을 20%로 설정하여 오른쪽으로 이동 */
+}
+.productAddInput input[type="text"]:focus, .productAddInput input[type="number"]:focus, .significant input[type="text"]:focus, .productAddInput select:focus, .productAddInput textarea:focus {
+    box-shadow: inset 1px 1px 2px #BABECC,
+                inset -1px -1px 2px #ffffff73;
+}
+.productAddInput textarea {
+    height: 200px;
+}
+
+.AIImages{
+    width: 120px;
+    height: 120px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+.productadd-header {
+    margin-left: 20%; /* 좌측 마진 크기 조정 */
+    margin-right: 20%; /* 우측 마진 크기 조정 */
+}

@@ -1,0 +1,49 @@
+.mainDescrip > div {
+    font-family: 'Jua', sans-serif;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 16px;
+    flex: 1;
+    padding: 80px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 1);
+    -webkit-backdrop-filter: blur(20px);
+    transition: box-shadow .3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.mainDescrip > div h2, .mainDescrip > div h3 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.mainDescrip > div p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+@media (max-width: 877px) {
+    .mainDescrip > div {
+        flex-direction: column;
+        padding: 40px;
+    }
+}
+
+
+@media (max-width: 351px) {
+    .mainDescrip > div h2, .mainDescrip > div h3 {
+        font-size: 1.2em;
+        padding:  90px;
+    }
+
+
+    .mainDescrip > div p {
+        font-size: 1em;
+    }
+
+}

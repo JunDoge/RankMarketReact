@@ -1,0 +1,11 @@
+.reflect {
+    transform: scaleX(-1);
+}
+.translate {
+    transform: translateX(-200%);
+}
+.footer {
+    left: 0%;
+    bottom: 0%;
+    width: 100%;
+}

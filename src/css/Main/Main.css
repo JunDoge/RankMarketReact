@@ -1,0 +1,79 @@
+ /* body {
+    background-image: url("https://ifh.cc/g/o0SKZC.png"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} */
+
+
+.component1{
+    width: 100vw;
+    height: 60vh;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    box-shadow: 0 8px 32px 0 rgb(252, 129, 39);
+    margin-bottom: 100px;
+}
+
+.component1::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120px;
+    height: 120px;
+    background: #FF9B4A;
+    border-radius: 50%;
+    transform: translate(0, 0);
+    box-shadow: 0 0 30px 15px #FF9B4A;
+    opacity: 0.8;
+    z-index: -1;
+    animation: move 10s linear infinite;
+}
+
+.component1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background: #FF9B4A;
+    border-radius: 50%;
+    transform: translate(0, 0);
+    box-shadow: 0 0 30px 15px #FF9B4A;
+    opacity: 0.8;
+    z-index: -1;
+    animation: move 12s linear infinite;
+}
+
+/* 애니메이션 정의 */
+@keyframes move {
+    0% { top: 0; left: 0; }
+    100% { top: 100%; left: 100%; }
+}
+
+.component2{
+    position: relative;
+    margin-top: 100px;
+}
+
+.component3{
+    position: relative;
+    margin-top: 100px;
+}
+
+.component4{
+    position: relative;
+    margin-top: 100px;
+}

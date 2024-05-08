@@ -1,0 +1,24 @@
+.custom-checkbox input[type="checkbox"] {
+    transform: scale(1.2);
+}
+.wish-button{
+    transform: scale(1.2);
+    margin-right: 100px;
+    border-radius: 30px;
+    background-color: white;
+    color: black;
+    border-color: #F27F22;
+    
+}
+.wish-button:hover{
+
+    border-radius: 30px;
+    background-color: #F27F22;
+    color: white;
+    border-color: #F27F22;
+}
+.wishlist-page .img-fluid {
+    max-width: 100%;
+    max-height: 165px;
+    object-fit: cover;
+}

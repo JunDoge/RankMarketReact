@@ -1,0 +1,60 @@
+prdMgmt.css
+.borderBottom {
+    width: 97%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-bottom: 1px solid rgba(126,126, 126, 0.3);
+}
+
+
+.prdMgmt-button{
+    color: black;
+    border-color: black;
+    background-color: white;
+}
+.font20 {
+    font-size: 20px;
+}
+.font-weight-bold{
+    font-weight: bold;
+}
+
+/*prgmgmt ,  report, Review, WishList 모달부분*/
+.delSucModal{
+
+}
+
+/*WinHistory 모달부분*/
+.reviewModal{
+
+}
+
+/*Signup 인증 모달*/
+.registModal{
+
+}
+/*SignUp 버튼 디자인 설정*/
+.SignButton{
+    background-color: #ff9b4a;
+    border-color: white;
+}
+.SignButton:hover {
+    background-color: #FFEBDB;
+    border-color: white;
+    color: #F27F22;
+}
+.img-container {
+    width: 100px; 
+    height: 100px; 
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 45px; /* 이미지 컨테이너를 오른쪽으로 이동 */
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}

@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+.component > div {
+    font-family: 'Jua', sans-serif;
+    flex: 1;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 16px;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.img-fluid {
+    border-radius: 20px;
+    max-width: 80%; /* 이미지 크기를 90%에서 80%로 줄임 */
+    display: block;
+    margin: auto;
+}
+
+.custom-button {
+    font-family: 'Jua', sans-serif;
+    font-size: 1em;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    border: none;
+    background-color: #F27F22;
+    color: white;
+    width: 120px;
+    height: 40px;
+    display: block;
+    margin: 10px auto;
+    transition: all 0.3s ease 0s;
+    position: relative;
+}
+
+.custom-button:hover {
+    background-color: #ff7f50;
+    color: #fff;
+    transform: translateY(-7px);
+    animation: shadow-pulse 1s infinite;
+}
+
+@keyframes shadow-pulse {
+    0% { box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); }
+    50% { box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); }
+    100% { box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); }
+}
+
+.img-fluid-custom {
+    width: auto;
+    height: auto;
+    border-radius: 20px;
+    max-width: 100%; /* 이미지 최대 너비를 90%에서 100%로 증가 */
+    max-height: 120px; /* 이미지 최대 높이를 100px에서 120px로 증가 */
+}
+
+
+.img-Raidus {
+    max-height: 70px; /* 이미지 높이를 80px에서 70px로 줄임 */
+    max-width: 90%; /* 이미지 너비를 100%에서 90%로 줄임 */
+    border-radius: 50%;
+}
+
+.component > div h4, .component > div p {
+    font-size: 1.5em;
+    color: #333;
+    font-weight: bold;
+    line-height: 1.5;
+}

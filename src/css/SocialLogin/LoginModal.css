@@ -1,0 +1,25 @@
+
+.modal-dialog {
+    width: 600px;
+    height: 600px;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.loginButtons button {
+    display: block;
+    margin: 0 auto;
+    border: none;
+    background-color: transparent;
+}
+.loginImg {
+    width: 400px;
+    height: auto;
+}
+.modal-background {
+    height: 200px;
+    background: url('https://rankmarketfile.s3.ap-northeast-2.amazonaws.com/image/modal.png') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}

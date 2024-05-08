@@ -1,0 +1,12 @@
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar {
+    flex: 0.15;
+}
+
+.main-content {
+    flex: 0.85;
+}

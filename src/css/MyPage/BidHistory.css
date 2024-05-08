@@ -1,0 +1,17 @@
+.bidhis-button{
+    color: black;
+    border-color: black;
+    background-color: white;
+    
+}
+.bid{
+    background-color: white;
+    border: none;
+    color: white;
+}
+/* 이미지 크기를 160.63px * 160.63px로 고정 */
+.img-fixed-size {
+    width: 160.63px;
+    height: 160.63px;
+    object-fit: cover; /* 이미지 비율을 유지하면서 컨테이너에 맞춰 조절 */
+}

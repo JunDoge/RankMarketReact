@@ -1,0 +1,74 @@
+/*네비게이션 바 막대기*/
+.bg-body-tertiary {
+    background-image: linear-gradient(to right,#facea9,#FF9B4A,#FF9B4A,#FF9B4A,#facea9);
+    background-size: 100% 5px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.loginButton{
+    background-color: #FFEBDB;
+    color: #F27F22;
+    border: none;
+}
+.loginButton:hover {
+    background-color: #FF7200;
+    border-color: #FF7200;
+}
+.productPage, .productAdd, .myPage {
+    font-family: 'Jua', sans-serif;
+}
+
+.navbarPosition{
+    top:0%;
+    position: fixed;
+    width: 100vw;
+    z-index: 500;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+.search_bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40px;
+    height: 40px;
+    background: #FFEBDB url('https://ifh.cc/g/ajJ9mJ.png') no-repeat;  /* right 제거 */
+    background-position: 50% 50%;  /* 아이콘 위치를 가운데로 조정 */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #F27F22;
+    transition: width 0.5s ease;
+    font-family: 'Jua', sans-serif;
+    color: #F27F22;
+    margin-left: 20px;
+    background-size: 20px;
+}
+.search_bar:focus-within {
+    width: 200px;
+    background: none;
+}
+
+.search_bar input {
+    border: none;
+    background-color: transparent;
+    width: 20px;
+    transition: width 0.5s ease;
+    outline: none;
+    height: 30px;
+}
+/* 기본 상태 placeholder 투명하게 설정 */
+.search_bar input::placeholder {
+    color: transparent;
+}
+
+/* 포커스시에는 placeholder 텍스트 색상 주황 변경 */
+.search_bar input:focus::placeholder {
+    color: #F27F22;
+}
+.search_bar:focus-within input {
+    width: 80%;
+}

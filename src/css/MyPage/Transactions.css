@@ -1,0 +1,19 @@
+.transButton{
+    font-weight: bold;
+    transform: scale(1.5);
+    background-color: inherit;
+    color : black;
+    border: none;
+    margin-right: 150px;
+}
+.transButton:hover, .transButton:focus, .transButton:active {
+
+    background-color: white !important;
+    color : black !important;
+    border: none !important;
+    outline: none !important;
+}
+.transButton.active{
+    background-color: white !important;
+    color: #F27F22 !important;
+}

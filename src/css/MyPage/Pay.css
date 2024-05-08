@@ -1,0 +1,88 @@
+.pay-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pay-left {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.pay-right {
+    flex: 1;
+    margin-left: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    background-color: #ffffff;
+    justify-content: space-between;
+}
+.pay-right .total {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.pay-right .totalItem {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.pay-right .buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.item-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.item-title {
+    font-size: 16px;
+}
+.payItem {
+    margin: 10px auto;
+    margin-left: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    background-color: #ffffff;
+}
+.payItem .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-continue {
+    border-color: #F27F22;
+    background-color: white;
+    color: black;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+.btn-continue:hover {
+    background-color: #F27F22;
+    color: white;
+}
+.btn-openpay {
+    width: 30%;
+    background-color: #F27F22;
+    border: none;
+    color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+.btn-openpay:hover {
+    background-color: #FFA07A;
+    color: white;
+    border-color: #F27F22;
+}
+.btn-pay {
+    width: 80%;
+}
+.pay-right .paycenter-button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 40px;
+}
+

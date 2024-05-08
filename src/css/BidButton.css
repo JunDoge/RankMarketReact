@@ -1,0 +1,156 @@
+.center-button {
+  align-items: center !important;
+  appearance: none !important;
+  background-color: #EEF2FF;
+  border-radius: 8px !important;
+  border-width: 2px !important;
+  border-color: #ff9b4a !important;
+  box-shadow: #ffab67 0 2px 4px, #ffb375 0 7px 13px -3px, #ffcea5 0 -3px 0 inset !important;
+  box-sizing: border-box !important;
+  color: #ffffff !important;
+  display: inline-flex !important;
+  height: 40px ; /** 버튼의 높이 조정*/ 
+  width: 130px ; /** 버튼의 너비 조정*/
+  padding: 0.5em 1em !important; /* 버튼 내부의 패딩 조정 */
+  justify-content: center ;
+  top: 50% ; /* 상단에서부터의 위치 조정 */
+  margin: 0 auto;
+  text-align: center ;
+  text-decoration: none ;
+  transition: box-shadow 0.15s, transform 0.15s ;
+  user-select: none ;
+  -webkit-user-select: none ;
+  touch-action: manipulation ;
+  white-space: nowrap ;
+  will-change: box-shadow, transform ;
+  font-size: 14px ; /* 글자 크기 조정 */
+  font-weight: bold ; 
+
+}
+.center-button:focus {
+  outline: none !important;
+  box-shadow: #ffab67 0 0 0 1.5px inset, #ffb375 0 2px 4px, #ffcda5 0 7px 13px -3px, #ffcea5 0 -3px 0 inset !important;
+}
+.center-button:hover {
+  box-shadow: #ffab6746 0 4px 8px, rgba(83, 109, 254, 0.171) 7px 13px -3px, #ffcea5 0 -3px 0 inset !important;
+  transform: translateY(-2px) !important;
+}
+.center-button:active {
+  box-shadow: #D6D6E7 0 3px 7px inset !important;
+  transform: translateY(2px) !important;
+}
+
+
+
+
+.btn-secondary{
+  color:#ff9b4a ;
+}
+
+
+#firework-effect {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.4);
+}
+
+#firework-effect.show {
+    display: block;
+}
+
+#firework-effect > .firework {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff;
+    animation: 1s fireworks-bang ease-out forwards, 1s fireworks-gravity ease-in forwards, 5s fireworks-position linear forwards;
+    animation-duration: 1.25s, 1.25s, 6.25s;
+}
+@keyframes fireworks-position {
+  0%, 19.9% {
+    margin-top: 0%;
+    margin-left: 0%;
+  }
+
+  20%, 39.9% {
+    margin-top: 40%;
+    margin-left: 30%;
+  }
+
+  40%, 59.9% {
+    margin-top: 20%;
+    margin-left: 70%;
+  }
+
+  60%, 79.9% {
+    margin-top: 30%;
+    margin-left: 20%;
+  }
+
+  80%, 99.9% {
+    margin-top: 30%;
+    margin-left: 80%;
+  }
+}
+
+@keyframes fireworks-gravity {
+  to {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+}
+
+@keyframes fireworks-bang {
+  to {
+    box-shadow: 114px -107.3333333333px #8800ff, 212px -166.3333333333px #a600ff, 197px -6.3333333333px #ff006a, 179px -329.3333333333px #3300ff, -167px -262.3333333333px #ff0062, 233px 65.6666666667px #ff008c, 81px 42.6666666667px #0051ff, -13px 54.6666666667px #00ff2b, -60px -183.3333333333px #0900ff, 127px -259.3333333333px #ff00e6, 117px -122.3333333333px #00b7ff, 95px 20.6666666667px #ff8000, 115px 1.6666666667px #0004ff, -160px -328.3333333333px #00ff40, 69px -242.3333333333px #000dff, -208px -230.3333333333px #ff0400, 30px -15.3333333333px #e6ff00, 235px -15.3333333333px #fb00ff, 80px -232.3333333333px #d5ff00, 175px -173.3333333333px #00ff3c, -187px -176.3333333333px #aaff00, 4px 26.6666666667px #ff6f00, 227px -106.3333333333px #ff0099, 119px 17.6666666667px #00ffd5, -102px 4.6666666667px #ff0088, -16px -4.3333333333px #00fff7, -201px -310.3333333333px #00ffdd, 64px -181.3333333333px #f700ff, -234px -15.3333333333px #00fffb, -184px -263.3333333333px #aa00ff, 96px -303.3333333333px #0037ff, -139px 10.6666666667px #0026ff, 25px -205.3333333333px #00ff2b, -129px -322.3333333333px #40ff00, -235px -187.3333333333px #26ff00, -136px -237.3333333333px #0091ff, -82px -321.3333333333px #6a00ff, 7px -267.3333333333px #ff00c8, -155px 30.6666666667px #0059ff, -85px -73.3333333333px #6a00ff, 60px -199.3333333333px #55ff00, -9px -289.3333333333px #00ffaa, -208px -167.3333333333px #00ff80, -13px -299.3333333333px #ff0004, 179px -164.3333333333px #ff0044, -112px 12.6666666667px #0051ff, -209px -125.3333333333px #ff00bb, 14px -101.3333333333px #00ff95, -184px -292.3333333333px #ff0099, -26px -168.3333333333px #09ff00, 129px -67.3333333333px #0084ff, -17px -23.3333333333px #0059ff, 129px 34.6666666667px #7300ff, 35px -24.3333333333px #ffd900, -12px -297.3333333333px #ff8400, 129px -156.3333333333px #0dff00, 157px -29.3333333333px #1a00ff, -221px 6.6666666667px #ff0062, 0px -311.3333333333px #ff006a, 155px 50.6666666667px #00ffaa, -71px -318.3333333333px #0073ff;
+  }
+}
+
+.IconContainer {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.IconContainer svg {
+  width: 40%;
+  z-index: 3;
+}
+
+.box-top {
+  transition: all 0.3s;
+}
+
+.coin {
+  width: 25%;
+  height: 25%;
+  background-color: #ffee00;
+  position: absolute;
+  border-radius: 50%;
+  transition: all 0.3s;
+  z-index: 1;
+  border: 3px solid #ffed75;
+  margin-top: 4px;
+}
+
+
+.reward-btn:hover .IconContainer .box-top {
+    transform: translateY(-5px);
+  }
+
+ .reward-btn:hover .coin {
+    transform: translateY(-5px);
+    transition-delay: 0.2s;
+  }
+  
+  

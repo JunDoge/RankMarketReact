@@ -1,0 +1,43 @@
+.errorMain{
+    background-color: #D9D9D9;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.errorComponent{
+    text-align: center;
+    width: 1000px;
+    height: 600px;
+    background-color: #F7F9FB;
+}
+.errorComponent img{
+    margin-top : 5%
+}
+.errorComponent h1,
+.errorComponent p {
+    margin: 30px
+}
+
+.errorComponent button {
+    margin: 0 1em;
+}
+
+.btn-prev {
+    margin: 0 1em;
+    background-color: #EEEEEE;
+}
+.btn-prev:hover {
+    background-color: #DDDDDD;
+}
+
+.btn-main {
+    margin: 0 1em;
+    background-color: #F27F22;
+    color: white;
+}
+.btn-main:hover {
+    background-color: #E26A1C;
+}

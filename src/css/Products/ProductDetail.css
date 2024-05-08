@@ -1,0 +1,97 @@
+.product-detail{
+    margin-top: 5%;
+}
+.product-bid{
+    margin-top: 20%;
+    width: 80%;
+    color: white;
+    text-align: center;
+    background-color: #F27F22;
+    border-color: #F27F22;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+.product-bid:hover,
+.product-bid:focus,
+.product-bid:active {
+    background-color: #E27E22;
+    border-color: #E27E22;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+.dynamic-font{
+    font-size: calc(2px + 1vw);
+    font-weight: bold;
+    margin: 3%;
+}
+.dynamic-font-size {
+    font-size: calc(10px + 2vw);
+    font-weight: bold;
+    margin: 5%;
+}
+.orange{
+    color : #F27F22;
+}
+.green{
+    color : #3E9242;
+}
+.gray{
+    color : #7A7A7A;
+    margin-bottom: 10%;
+}
+.subImag{
+    width: 90%;
+    margin-left: 10px;
+    margin-top: 5%;
+}
+.product-des{
+    margin-top: 5%;
+
+}
+.product-end{
+    margin-top: 10%;
+    border-bottom: 5px solid #EAECF0;
+}
+
+/* 상세정보 */
+.product-des .nav-tabs {
+  border-bottom: none;
+  background-color: #ffffff;
+  box-shadow: 10px 10px 10px #bebebe, -10px -10px 10px #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.detail-nav .nav-item .nav-link {
+  color: #333;
+  background-color: #ffffff;
+  border: none;
+  box-shadow: 5px 5px 20px #bebebe, -5px -5px 20px #e0e0e0;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.detail-nav .nav-item .nav-link.active {
+  background-color: #d0d0d0;
+  box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;
+}
+
+.detail-nav .tab-content {
+  background-color: #ffffff;
+  box-shadow: 10px 10px 10px #bebebe, -10px -10px 10px #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* 메인 이미지 크기 조정 */
+.product-main-image {
+    width: 636px;
+    height: 636px;
+    object-fit: cover; /* 이미지 비율을 유지하며 컨테이너를 채움 */
+}
+
+/* 서브 이미지 크기 조정 */
+.product-sub-image {
+    width: 119px; /* 119.09px로 설정하고 싶으나, CSS에서는 정수 값을 사용합니다. */
+    height: 119px;
+    object-fit: cover; /* 이미지 비율을 유지하며 컨테이너를 채움 */
+}
